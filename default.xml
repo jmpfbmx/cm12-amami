@@ -12,6 +12,11 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote  name="jmpfbmx"
+           fetch="https://github.com/jmpfbmx"
+           revision="master" />
+
+
   <default revision="refs/heads/cm-12.1"
            remote="github"
            sync-tags="false"
@@ -115,8 +120,6 @@
   <project name="platform/system/ca-certificates" path="system/ca-certificates" remote="aosp" revision="refs/tags/android-8.1.0_r36" />
   
   <!-- Privacy-Browser (stoutner.com) -->
-  <remote name="stoutner" fetch="git://git.stoutner.com" />
-  <project path="external/stoutner/privacy-browser" remote="stoutner"
-           name="git/PrivacyBrowserROMIntegration.git" clone-depth="1" revision="master" />
+  <project path="external/stoutner/privacy-browser" name="android_external_stoutner_privacy-browser" remote="jmpfbmx" />
 
 </manifest>
